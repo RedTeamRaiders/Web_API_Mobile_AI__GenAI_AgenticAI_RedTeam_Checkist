@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🦊 LLM Testing Findings</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        body {
+            background-color: #121212; /* Dark background */
+            color: #E0E0E0; /* Light text */
+        }
+        .pixel-font {
+            font-family: 'Press Start 2P', 'Aptos', cursive;
+        }
+        .description {
+            margin-top: 4px;
+            font-size: 0.75rem;
+            color: #BDBDBD; /* Slightly dimmer text for descriptions */
+        }
+        a {
+            color: #BB86FC; /* Purple links for contrast */
+        }
+        .container {
+            max-width: 800px; /* Adjust container width if necessary */
+            margin: 0 auto;
+            padding: 20px;
+        }
+        ul {
+            list-style-type: none; /* Remove bullet points */
+        }
+        li {
+            border-bottom: 1px solid #333; /* Add a subtle separator */
+            padding-bottom: 10px; /* Space out list items */
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="text-4xl pixel-font text-center my-8">LLM Testing Findings</h1>
+
+    <ul class="list-none">
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Authorization-Bypass-through-User-Controlled-Parameter.md" class="pixel-font">Authorization Bypass through User Controlled Parameter</a>
+            <p class="description">Discusses vulnerabilities where authorization can be bypassed through parameters controlled by the user.</p>
+        </li>
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/DataLeakage.md" class="pixel-font">Data Leakage</a>
+            <p class="description">Addresses the potential for sensitive data to be unintentionally exposed or accessed.</p>
+        </li>
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/DataPoisoning.md" class="pixel-font">Data Poisoning</a>
+            <p class="description">Explores vulnerabilities related to malicious alterations of training data to compromise a model.</p>
+        </li>
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Improper-IAM-Models.md" class="pixel-font">Improper IAM Models</a>
+            <p class="description">Highlights the risks and vulnerabilities associated with improper implementation of Identity and Access Management models.</p>
+        </li>
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Inadequate-Anomaly-Detection.md" class="pixel-font">Inadequate Anomaly Detection</a>
+            <p class="description">Sheds light on the shortcomings of anomaly detection systems in identifying unusual or suspicious behavior effectively.</p>
+        </li>
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Inadequate-DR-Plan.md" class="pixel-font">Inadequate DR Plan</a>
+            <p class="description">Discusses the consequences and risks of having an inadequate Disaster Recovery plan for LLM systems.</p>
+        </li>
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Inadequate-ML-Grounding.md" class="pixel-font">Inadequate ML Grounding</a>
+            <p class="description">Points out the issues with insufficient grounding or baseline understanding in machine learning applications.</p>
+        </li>
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Insecure-Model-Arch.md" class="pixel-font">Insecure Model Arch</a>
+            <p class="description">Focuses on vulnerabilities due to insecure architectural designs in LLM models.</p>
+        </li>
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Insufficient-InputValidation.md" class="pixel-font">Insufficient Input Validation</a>
+            <p class="description">Details the dangers of not adequately validating inputs, leading to potential security and operational risks.</p>
+        </li>
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Insufficient-Logging-MLOps.md" class="pixel-font">Insufficient Logging MLOps</a>
+            <p class="description">Highlights the deficiencies in logging practices within Machine Learning Operations, impacting monitoring and auditing capabilities.</p>
+        </li>
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Insufficient-OutputSanitization-ContentFiltering.md" class="pixel-font">Insufficient Output Sanitization Content Filtering</a>
+            <p class="description">Discusses the lack of proper output sanitization and content filtering, leading to potential exposure of inappropriate or harmful content.</p>
+        </li>
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Lacking-Env-Segmentation-Gap-MLOps.md" class="pixel-font">Lacking Env Segmentation Gap MLOps</a>
+            <p class="description">Points out the risks associated with insufficient environmental segmentation in MLOps practices.</p>
+        </li>
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Lacking-Output-Disclaimer.md" class="pixel-font">Lacking Output Disclaimer</a>
+            <p class="description">Addresses the importance of including disclaimers for outputs to manage expectations and clarify limitations.</p>
+        </li>
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Lacking-RateLimiting.md" class="pixel-font">Lacking Rate Limiting</a>
+            <p class="description">Discusses the security and performance implications of not implementing rate limiting controls.</p>
+        </li>
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Lacking-User-Feedback-Mechanism.md" class="pixel-font">Lacking User Feedback Mechanism</a>
+            <p class="description">Highlights the drawbacks of not having mechanisms for users to provide feedback on LLM applications.</p>
+        </li>
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/PromptInjection.md" class="pixel-font">Prompt Injection</a>
+            <p class="description">Explores the security vulnerabilities associated with prompt injection attacks, where malicious inputs can manipulate model behavior.</p>
+        </li>
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Unrestricted-Task-Execution.md" class="pixel-font">Unrestricted Task Execution</a>
+            <p class="description">Discusses the risks and potential consequences of allowing unrestricted task execution within LLM applications.</p>
+        </li>
+        <li class="mb-4">
+            <a href="https://github.com/BishopFox/llm-testing-findings/blob/main/Violation-DifferentialPrivacy.md" class="pixel-font">Violation Differential Privacy</a>
+            <p class="description">Addresses issues related to the violation of differential privacy principles, compromising individual data privacy.</p>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
